@@ -43,4 +43,10 @@ dot_prod <- dogs %*% birds
 ```
 
 
+```{r}
+
+insect <- matrix( data = c(0, 0, 600, 0.2, 0, 0, 0, 0.08, 0), nrow = 3, ncol = 3, byrow = TRUE)
+
+
+```
 
