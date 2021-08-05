@@ -1,0 +1,42 @@
+---
+title: "R exploring"
+author: "Allie Cole"
+date: "8/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(GGally)
+library(skimr)
+library(palmerpenguins)
+```
+
+## Tools for data exploration 
+
+```{r}
+# return the names of all variables 
+
+names(penguins)
+
+# definitions of my data frame 
+
+dim(penguins)
+
+# get an overall summary of the data 
+
+summary(penguins)
+
+# check the class 
+
+class(penguins$species)
+
+# look at first few lines (six lines) 
+
+head(penguins)
+
+# look at teh last six lines 
+
+tail(penguins) 
+```
+
