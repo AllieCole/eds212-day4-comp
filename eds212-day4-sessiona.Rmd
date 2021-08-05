@@ -47,6 +47,10 @@ dot_prod <- dogs %*% birds
 
 insect <- matrix( data = c(0, 0, 600, 0.2, 0, 0, 0, 0.08, 0), nrow = 3, ncol = 3, byrow = TRUE)
 
+# specifiy the inital conditions 
+# what is teh population in each life stage at year 0?
+
+insect_y0 <- c(12000, 700, 500)
 
 ```
 
