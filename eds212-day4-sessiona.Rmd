@@ -1,0 +1,46 @@
+---
+title: "Leslie matrix"
+author: "Allie Cole"
+date: "8/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Creating Matrices in R 
+
+use the `matrix()` function to wrap a series of values (a vector) into a matrix 
+- use `nrow =` to specify number of rows 
+- use `ncol =` to specify number of columns
+- use `byrow = TRUE` to populate teh matrix by ROWS instead of COLUMNS  
+
+```{r}
+cats <- c(1, 3, 6, 5, 12, 9, 34, 90, 13)
+
+# wrap cats into a matrix 
+
+cat_matrix <- matrix(data = cats, nrow = 4, ncol = 3, byrow = TRUE)
+```
+
+```{r}
+# making new ones to play around with 
+
+dogs <- matrix(data = c(1, 3, 2, 3), nrow = 2, ncol = 2, byrow = TRUE)
+
+birds <- matrix(data = c(4, 3, 2, 1), nrow = 2, ncol = 2, byrow = TRUE)
+```
+
+```{r}
+# and now messing around with stuff!
+
+multiply_scalar <- 7 * birds
+
+add <- dogs + birds
+
+dot_prod <- dogs %*% birds
+```
+
+
+
